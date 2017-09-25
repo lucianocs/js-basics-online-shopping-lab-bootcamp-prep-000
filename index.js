@@ -10,7 +10,8 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- // write your code here
+  var o = new Object(item);
+  cart.push(o) 
 }
 
 function viewCart() {
