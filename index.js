@@ -33,7 +33,6 @@ function addToCart(itemName) {
 
   var obj = new Object({ [itemName]: itemPrice })
 
-
   cart.push(obj)
 
   console.log(`${itemName} has been added to your cart.`)
