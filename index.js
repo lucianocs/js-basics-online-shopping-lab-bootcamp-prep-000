@@ -15,9 +15,9 @@ function addToCart(item) {
   if(cart.length = 0){
     cart[0] = item
   }else {
-    cart.push(o)   
+    cart.push(o)
   }
-  return cart  
+  return cart
 }
 
 function viewCart() {
