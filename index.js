@@ -25,7 +25,7 @@ function addToCart(item) {
 
   var obj = new Object({ [item]: price });
 
-  
+
   if(cart.length = 0){
     cart[0] = item
   }else {
