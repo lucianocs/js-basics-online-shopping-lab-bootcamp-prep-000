@@ -28,7 +28,7 @@ function addToCart(item) {
   if(cart.length = 0){
     cart[0] = item
   }else {
-    cart.push(o)
+    cart.push(obj)
   }
   return cart
 }
