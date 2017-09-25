@@ -11,7 +11,13 @@ function setCart(c) {
 
 function addToCart(item) {
   var o = new Object(item);
-  cart.push(o) 
+
+  if(cart.length = 0){
+    cart[0] = item
+  }else {
+    cart.push(o)   
+  }
+  return cart  
 }
 
 function viewCart() {
