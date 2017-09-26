@@ -50,7 +50,7 @@ function viewCart() {
     for (i = 0; i <= cart.length; i++ ){
       msg = msg + `${cart[i]} at $${cart[i.i]} `
     }
-
+    console.log(msg);
 
 
     }
