@@ -43,17 +43,17 @@ function viewCart() {
     if (cart.length == 1) {
       return `In your cart, you have ${itemName} at $${itemPrice}.`
     }else if(cart.length == 2) {
-      return `In your cart, you have ${itemName} at $${itemPrice} and ${cart[1]} at $${cart[1.1]}  `
+      return `In your cart, you have ${itemName} at $${itemPrice} and ${cart[1]} at $${cart[1].[1]}  `
     }else{
     var i = cart.length
     var msg = `In your cart, you have `;
     for (i = 0; i <= cart.length; i++ ){
-      msg = msg + `${cart[i]} at $${cart[i.i]} `
+      msg = msg + `${cart[i]} at $${cart[i].[i]} `
     }
-     
-       
-      
-    } 
+
+
+
+    }
 
   }
 }
