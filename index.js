@@ -37,8 +37,9 @@ function viewCart() {
   if (cart.length == 0) {
     console.log('Your shopping cart is empty.')
   }else{
-    var itemName = 'lemons'
-  //  var itemPrice = 13
+    var obj = cart[0]
+    var itemName = obj[0]
+    var itemPrice = obj.itemName[0]
 
     if (cart.length == 1) {
       console.log(`In your cart, you have ${itemName} at $${itemPrice}.`)
