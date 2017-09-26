@@ -41,7 +41,7 @@ function viewCart() {
     var itemName = obj[0]
     var itemPrice = obj.itemName[0]
 
-    if (cart.length == 1) {
+    if (cart.length < 2) {
       console.log(`In your cart, you have ${itemName} at $${itemPrice}.`)
     }else if(cart.length == 2) {
       console.log(`In your cart, you have ${itemName} at $${itemPrice} and ${cart[1]} at $${cart[1.1]}  `)
