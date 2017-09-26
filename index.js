@@ -35,7 +35,7 @@ coherent statement in this format: `In your cart, you have bananas at $17, panca
 
 function viewCart() {
   if (cart.length == 0) {
-    return 'Your shopping cart is empty.'
+    console.log('Your shopping cart is empty.')
   }else{
     var itemName = cart[0]
     var itemPrice = cart[0.0]
