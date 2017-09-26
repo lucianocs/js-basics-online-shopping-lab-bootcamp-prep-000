@@ -43,7 +43,7 @@ function viewCart() {
     if (cart.length == 1) {
       console.log(`In your cart, you have ${itemName} at $${itemPrice}.`)
     }else if(cart.length == 2) {
-      return `In your cart, you have ${itemName} at $${itemPrice} and ${cart[1]} at $${cart[1.1]}  `
+      console.log(`In your cart, you have ${itemName} at $${itemPrice} and ${cart[1]} at $${cart[1.1]}  `)
     }else{
     var i = cart.length
     var msg = `In your cart, you have `;
