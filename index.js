@@ -9,21 +9,6 @@ function setCart(c) {
   return cart;
 }
 
-
-/*
-2. The `viewCart()` function does not accept any arguments.
-It should loop over every item in your cart, printing out the contents as one long,
-coherent statement in this format: `In your cart, you have bananas at $17, pancake batter at $5, and eggs at $49.`
-    + If the cart is empty, the function should instead print out `Your shopping cart is empty.`
-    + ***Note***: Pay close attention to the syntax above. The printed statement
-    should be a single sentence that begins with `In your cart, you have `,
-     terminates in a period, and can assume the following shapes according to how many items the cart contains:
-      * 1 item — `In your cart, you have bananas at $17.`
-      * 2 items — `In your cart, you have bananas at $17 and pancake batter at $5.`
-      * 3+ items — `In your cart, you have bananas at $17, pancake batter at $5, and eggs at $49.`
-
-*/
-
 function addToCart(itemName) {
 
   var itemPrice = Math.floor(Math.random() * (100 - 1) + 1)
@@ -36,6 +21,17 @@ function addToCart(itemName) {
 
   return cart
 }
+/*
+2. The `viewCart()` function does not accept any arguments.
+It should loop over every item in your cart, printing out the contents as one long,
+coherent statement in this format: `In your cart, you have bananas at $17, pancake batter at $5, and eggs at $49.`
+    + If the cart is empty, the function should instead print out `Your shopping cart is empty.`
+    + ***Note***: Pay close attention to the syntax above. The printed statement
+    should be a single sentence that begins with `In your cart, you have `,
+     terminates in a period, and can assume the following shapes according to how many items the cart contains:
+      * 1 item — `In your cart, you have bananas at $17.`
+      * 2 items — `In your cart, you have bananas at $17 and pancake batter at $5.`
+      * 3+ items — `In your cart, you have bananas at $17, pancake batter at $5, and eggs at $49.`*/
 
 function viewCart() {
   if (cart.length == 0) {
@@ -43,12 +39,21 @@ function viewCart() {
   }else{
     var itemName = cart[0]
     var itemPrice = cart[0.0]
-    
-    if (cart.length == 1) {      
+
+    if (cart.length == 1) {
       return `In your cart, you have ${itemName} at $${itemPrice}.`
     }else if(cart.length == 2) {
       return `In your cart, you have ${itemName} at $${itemPrice} and ${cart[1]} at $${cart[1.1]}  `
+    }else{
+    var i = cart.length
+    var msg = `In your cart, you have `;
+    for (i = 0; i <= cart.length; i++ ){
+      msg = msg + `${cart[i]} at $${cart[i.i]} `
     }
+     
+       
+      
+    } 
 
   }
 }
